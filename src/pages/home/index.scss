@@ -1,0 +1,51 @@
+body{background-color: #fefeff;}
+page{background-color: #fefeff;}
+.homeIndex {
+    overflow: hidden;
+    .banner{width: 690px;height: 200px;border-radius: 10px;background-color: #eeeeef;margin: 30px;}
+    .tagListBox{width: 750px;display: flex;align-items: center;justify-content: space-between;
+        .tagList{width: 150px;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+        .tagList:nth-of-type(1){margin-left: 30px;}
+        .tagList:nth-last-of-type(1){margin-right: 30px;}
+        .tag{width: 100px;height: 100px;background-color: #eeeeef;border-radius: 50%;overflow: hidden;}
+        .tagText{font-size: 32px;padding-top: 20px;}
+    }
+    .recommend{
+        .title{padding-left: 30px;font-size: 32px;padding-top: 50px;}
+        .box{width: 690px;min-height: 20px;background-color: white;margin:30px ;display: flex;align-items: center;
+            justify-content: space-between;
+            .left{width: 400px;height: 250px;background-color: white;border-radius: 10px;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);overflow: hidden;position: relative;box-sizing: border-box;background-color: rgba(255, 114, 78, 0.8);}
+            .left .Img{width: 400px;position: absolute;top: -30px;left: 80px;z-index: 8;}
+            .left .Img2{width: 400px;position: absolute;top: -130px;left: 80px;z-index: 8;}
+            .letf .main{color: white;}
+            .left .t1{font-size: 36px;padding: 20px;font-weight: bold;color: white;}
+            .left .t2{font-size: 32px;padding-left: 20px;z-index: 10;position: absolute;color: white;}
+            .right{display: flex;align-items: center;flex-direction: column;width: 280px;}
+            .right_top{height: 120px;width: 270px;background-color: #eeeeef;margin-bottom: 10px;border-radius: 5px;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);position: relative;background-color: rgba(78, 111, 255, 0.8);}
+            .right_top .Img{height: 120px;left: 20px;width: 155px;}
+            .right_top .text{color: white;position: absolute;top: 10px;font-size: 32px;right: 10px;}
+            .right_bottom{height: 120px;width: 270px;background-color: #ffd093;border-radius: 5px;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                position: relative;
+            }
+            .right_bottom .Img{height: 120px;left: 20px;width: 155px;}
+            .right_bottom .text{color: white;position: absolute;top: 10px;font-size: 32px;right: 10px;}
+        }
+    }
+    .otherWorkBox{
+        .title{padding-left: 30px;font-size: 32px;padding-top: 50px;}
+    }
+    .newJob{
+        font-size: 32px;
+        width: 690px;
+        height: 80px;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin-left: 30px;
+        line-height: 80px;
+        border-radius: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        .newJobNum{color: red;}
+        .iconfont{font-size: 40px;height: 40px;display: inline-box;}
+    }
+}

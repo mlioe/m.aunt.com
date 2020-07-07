@@ -1,0 +1,19 @@
+.jobList{
+    width: 750px;
+    .list{
+        width: 690px;
+        font-size: 32px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 20px 0 20px 30px;
+        background-color: white;
+        .title{padding: 20px 30px !important;font-weight: bold;}
+        .salary{font-size: 28px;color: red;padding-left: 30px;}
+        .other{padding-left: 30px;font-size: 28px;padding-top: 5px;}
+        .bottom{display: flex;align-items: center;justify-content: space-between;margin-top:20px;
+            .time{font-size: 28px;padding-left:30px ;padding-bottom: 20px;color: #808080;}
+            .btn{border: 1px solid #eeeeef;padding: 10px 20px;border-radius: 40px;font-size: 28px;margin:20px 20px;}
+        }
+    }
+}
