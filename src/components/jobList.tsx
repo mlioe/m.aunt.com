@@ -49,7 +49,6 @@ class Index extends Component<{}, PageState>{
     componentDidHide() { }
 
     demoClick(id){
-        console.log(id)
         this.props.handelClick(id)
     }
 
@@ -58,7 +57,7 @@ class Index extends Component<{}, PageState>{
             <View className='jobList'>
                 {
                     this.props.dataList.map(item=>{
-                        return <View className="list">
+                        return <View className="list" key={item.id}>
                                     <View className="title">
                                         钟点工|主要老人陪护|女性半自理或者男性自理|辅助做饭或者做家务
                                     </View>

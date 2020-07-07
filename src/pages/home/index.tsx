@@ -26,7 +26,7 @@ type PageDispatchProps = {
 type PageOwnProps = {}
 
 type PageState = {
-
+  jobList:Array<any>
 }
 
 type IProps = PageStateProps & PageDispatchProps & PageOwnProps
@@ -60,7 +60,7 @@ class Index extends Component<{}, PageState>{
   constructor(props) {
       super(props)
       this.state = {
-          addressList:[]
+          jobList:[{id:1},{id:2}]
       }
 
   }
@@ -76,7 +76,15 @@ class Index extends Component<{}, PageState>{
   componentDidHide() { }
 
   jobListClick(e){
-    console.log(e)
+    let jobList = this.state.jobList
+    for(var i=0;i<20;i++){
+      jobList.push({
+        id:5
+      })
+    }
+    this.setState({jobList},()=>{
+      console.log(this.state.jobList)
+    })
   }
 
   render() {
@@ -137,7 +145,7 @@ class Index extends Component<{}, PageState>{
                     好单推荐
               </View>
               <View>
-                  <JobList handelClick={this.jobListClick.bind(this)} dataList={[{id:1},{id:2}]}></JobList>
+                  <JobList handelClick={this.jobListClick.bind(this)} dataList={this.state.jobList}></JobList>
               </View>
         </View>
         <View className="newJob">

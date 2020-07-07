@@ -1,0 +1,85 @@
+page {
+  background-color: #eeeeef;
+}
+body {
+  background-color: #eeeeef;
+}
+.orderIndex {
+  .headerTab {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    .left,
+    .center {
+      width: 250px;
+      height: 80px;
+      font-size: 32px;
+      text-align: center;
+      line-height: 80px;
+    }
+    .center {
+      .iconfont {
+        padding-left: 10px;
+        font-size: 32px;
+      }
+    }
+    .right {
+      text-align: right;
+      width: 250px;
+      height: 80px;
+      font-size: 28px;
+      line-height: 80px;
+      padding-right: 10px;
+      box-sizing: border-box;
+      .iconfont {
+        font-size: 32px;
+        display: inline-block;
+        height: 80px;
+        padding-right: 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .ScrollView{position: absolute;top: 80px;bottom: 0;width: 100%;
+    .jobList{}
+  }
+
+  .headerTabMask {
+    width: 750px;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    top: 80px;
+    bottom: 0;
+    .conditionBox {
+      width: 100%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .conditionList {
+      width: 250px;
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      .text {
+        background-color: #eeeeef;
+        padding: 10px 0px;
+        width: 200px;
+        display: inline-block;
+        border-radius: 20px;
+        box-sizing: border-box;
+        border: 1px solid #eeeeef;
+        text-align: center;
+      }
+      .active{border: 1px solid red;background-color: #fae1da;color: #f67958;}
+    }
+  }
+}

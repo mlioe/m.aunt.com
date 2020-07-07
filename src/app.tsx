@@ -28,12 +28,30 @@ class App extends Component {
     pages: [
       'pages/home/index',
       'pages/index/index',
+      'pages/order/index'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar:{
+      list: [{
+        pagePath: "pages/home/index",
+        text: "首页",
+        iconPath: "./asset/avatar_15.png",
+        selectedIconPath: "./asset/avatar_15.png"
+      },{
+        pagePath: "pages/order/index",
+        text: "订单",
+        iconPath: "./asset/avatar_15.png",
+        selectedIconPath: "./asset/avatar_15.png"
+      }],
+      color: '#333',
+      selectedColor: '#fbc504',
+      backgroundColor: '#fff',
+      borderStyle: 'black'
     }
   }
 
